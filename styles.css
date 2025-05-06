@@ -1,7 +1,41 @@
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+.dark-mode .card,
+.dark-mode .col-lg-4 {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.dark-mode .search {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode .btn-dark {
+  background-color: #333;
+  border-color: #444;
+}
+
+#toggle-dark {
+  right: 0;
+  position: absolute;
+}
+
+
 .logo {
     font-family: "Playwrite RO", cursive;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
   }
+
+
   

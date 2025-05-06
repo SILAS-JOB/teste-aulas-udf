@@ -11,19 +11,92 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
-<body>
+<body class="dark-mode">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h1 class="logo"><i class="fa-solid fa-hotdog"></i>Linguiça News</h1>
+                <h1 class="logo"><i class="fa-solid fa-hotdog"></i>Biqueira News</h1>
             </div>
-            <div class="col-lg-6">Busca</div>
+            <div class="col-lg-4">
+                <div class="input-group mt-3">
+                    <input type="text" class="search" placeholder="Pesquisar...">
+                <button class="btn btn-dark">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </div>
+            </div>
+            <div class="col lg-2">
+                <button id="toggle-dark" class="btn btn-dark">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">Menu</div>
+            <div class="col-lg-12">
+                <nav id="barra" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><i class="fa-solid fa-house-chimney"></i></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Novidades Quentes</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Lista de Desaparecidos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Corinthians</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Promoções
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Quentes</a></li>
+                              <li><a class="dropdown-item" href="#">Mornas</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Sensuais</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input type="text" class="search" placeholder="Pesquisar...">
+                <button class="btn btn-dark">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">Slider</div>
+            <div class="col-lg-12">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-4">Card</div>
